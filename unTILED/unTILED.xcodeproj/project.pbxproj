@@ -30,7 +30,6 @@
 		ED9DC4B72815677D00EAAFCC /* LayoutViewInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED9DC4B62815677D00EAAFCC /* LayoutViewInfo.swift */; };
 		ED9DC4B9281568C600EAAFCC /* Layout.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED9DC4B8281568C600EAAFCC /* Layout.swift */; };
 		ED9DC4BB2815698A00EAAFCC /* TextElement.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED9DC4BA2815698A00EAAFCC /* TextElement.swift */; };
-		ED9DC4BD281569C100EAAFCC /* TextAlignment.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED9DC4BC281569C100EAAFCC /* TextAlignment.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -55,7 +54,6 @@
 		ED9DC4B62815677D00EAAFCC /* LayoutViewInfo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LayoutViewInfo.swift; sourceTree = "<group>"; };
 		ED9DC4B8281568C600EAAFCC /* Layout.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Layout.swift; sourceTree = "<group>"; };
 		ED9DC4BA2815698A00EAAFCC /* TextElement.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextElement.swift; sourceTree = "<group>"; };
-		ED9DC4BC281569C100EAAFCC /* TextAlignment.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextAlignment.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -171,7 +169,6 @@
 				ED9DC4AB28155CDA00EAAFCC /* ContentAlignment.swift */,
 				ED9DC4AD28155D9E00EAAFCC /* Stroke.swift */,
 				ED9DC4B428155FB000EAAFCC /* ContentMode.swift */,
-				ED9DC4BC281569C100EAAFCC /* TextAlignment.swift */,
 			);
 			path = Utils;
 			sourceTree = "<group>";
@@ -289,7 +286,6 @@
 				ED9DC4AE28155D9E00EAAFCC /* Stroke.swift in Sources */,
 				ED9DC4B028155EA800EAAFCC /* ShapeElement.swift in Sources */,
 				ED9DC4BB2815698A00EAAFCC /* TextElement.swift in Sources */,
-				ED9DC4BD281569C100EAAFCC /* TextAlignment.swift in Sources */,
 				ED9DC4B528155FB000EAAFCC /* ContentMode.swift in Sources */,
 				ED9DC4AC28155CDB00EAAFCC /* ContentAlignment.swift in Sources */,
 				ED9DC4B72815677D00EAAFCC /* LayoutViewInfo.swift in Sources */,
