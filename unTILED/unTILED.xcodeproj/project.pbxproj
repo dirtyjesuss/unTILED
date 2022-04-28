@@ -7,6 +7,11 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		ED19F1C5281AC2E100BEEE04 /* AuthCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED19F1C4281AC2E100BEEE04 /* AuthCoordinator.swift */; };
+		ED19F1C7281AC82100BEEE04 /* AuthViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED19F1C6281AC82100BEEE04 /* AuthViewModel.swift */; };
+		ED19F1C9281AC9CA00BEEE04 /* AuthViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED19F1C8281AC9CA00BEEE04 /* AuthViewController.swift */; };
+		ED19F1CC281ADBA900BEEE04 /* SnapKit in Frameworks */ = {isa = PBXBuildFile; productRef = ED19F1CB281ADBA900BEEE04 /* SnapKit */; };
+		ED19F1CF281ADF3900BEEE04 /* UITextField+Combine.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED19F1CE281ADF3900BEEE04 /* UITextField+Combine.swift */; };
 		ED790BCA280C34570014B9D4 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED790BC9280C34570014B9D4 /* AppDelegate.swift */; };
 		ED790BCC280C34570014B9D4 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED790BCB280C34570014B9D4 /* SceneDelegate.swift */; };
 		ED790BD3280C34580014B9D4 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = ED790BD2280C34580014B9D4 /* Assets.xcassets */; };
@@ -36,6 +41,10 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		ED19F1C4281AC2E100BEEE04 /* AuthCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthCoordinator.swift; sourceTree = "<group>"; };
+		ED19F1C6281AC82100BEEE04 /* AuthViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthViewModel.swift; sourceTree = "<group>"; };
+		ED19F1C8281AC9CA00BEEE04 /* AuthViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthViewController.swift; sourceTree = "<group>"; };
+		ED19F1CE281ADF3900BEEE04 /* UITextField+Combine.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UITextField+Combine.swift"; sourceTree = "<group>"; };
 		ED790BC6280C34570014B9D4 /* unTILED.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = unTILED.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		ED790BC9280C34570014B9D4 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		ED790BCB280C34570014B9D4 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -71,12 +80,39 @@
 				ED790BE7280C7E730014B9D4 /* FirebaseStorage in Frameworks */,
 				ED790BE3280C7E730014B9D4 /* FirebaseAuth in Frameworks */,
 				ED790BE5280C7E730014B9D4 /* FirebaseFirestore in Frameworks */,
+				ED19F1CC281ADBA900BEEE04 /* SnapKit in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		ED19F1C0281AC28800BEEE04 /* Modules */ = {
+			isa = PBXGroup;
+			children = (
+				ED19F1C1281AC29D00BEEE04 /* Auth */,
+			);
+			path = Modules;
+			sourceTree = "<group>";
+		};
+		ED19F1C1281AC29D00BEEE04 /* Auth */ = {
+			isa = PBXGroup;
+			children = (
+				ED19F1C4281AC2E100BEEE04 /* AuthCoordinator.swift */,
+				ED19F1C6281AC82100BEEE04 /* AuthViewModel.swift */,
+				ED19F1C8281AC9CA00BEEE04 /* AuthViewController.swift */,
+			);
+			path = Auth;
+			sourceTree = "<group>";
+		};
+		ED19F1CD281ADF0200BEEE04 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				ED19F1CE281ADF3900BEEE04 /* UITextField+Combine.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
 		ED790BBD280C34570014B9D4 = {
 			isa = PBXGroup;
 			children = (
@@ -148,6 +184,8 @@
 		ED9DC4982815410D00EAAFCC /* Presentation */ = {
 			isa = PBXGroup;
 			children = (
+				ED19F1C0281AC28800BEEE04 /* Modules */,
+				ED19F1CD281ADF0200BEEE04 /* Extensions */,
 			);
 			path = Presentation;
 			sourceTree = "<group>";
@@ -240,6 +278,7 @@
 				ED790BE2280C7E730014B9D4 /* FirebaseAuth */,
 				ED790BE4280C7E730014B9D4 /* FirebaseFirestore */,
 				ED790BE6280C7E730014B9D4 /* FirebaseStorage */,
+				ED19F1CB281ADBA900BEEE04 /* SnapKit */,
 			);
 			productName = unTILED;
 			productReference = ED790BC6280C34570014B9D4 /* unTILED.app */;
@@ -270,6 +309,7 @@
 			mainGroup = ED790BBD280C34570014B9D4;
 			packageReferences = (
 				ED790BDF280C7E730014B9D4 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */,
+				ED19F1CA281ADBA900BEEE04 /* XCRemoteSwiftPackageReference "SnapKit" */,
 			);
 			productRefGroup = ED790BC7280C34570014B9D4 /* Products */;
 			projectDirPath = "";
@@ -298,6 +338,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				ED19F1C9281AC9CA00BEEE04 /* AuthViewController.swift in Sources */,
 				ED9DC4A02815448300EAAFCC /* Point.swift in Sources */,
 				ED8B45732819DD3A00704D6B /* BaseCoordinator.swift in Sources */,
 				ED9DC49E281543D900EAAFCC /* Fraction.swift in Sources */,
@@ -308,12 +349,15 @@
 				ED9DC4A2281544F600EAAFCC /* Frame.swift in Sources */,
 				ED9DC4B328155F7100EAAFCC /* ImageElement.swift in Sources */,
 				ED9DC4A42815454400EAAFCC /* Cell.swift in Sources */,
+				ED19F1CF281ADF3900BEEE04 /* UITextField+Combine.swift in Sources */,
+				ED19F1C5281AC2E100BEEE04 /* AuthCoordinator.swift in Sources */,
 				ED9DC4AE28155D9E00EAAFCC /* Stroke.swift in Sources */,
 				ED8B456F2819C35A00704D6B /* Coordinator.swift in Sources */,
 				ED9DC4B028155EA800EAAFCC /* ShapeElement.swift in Sources */,
 				ED9DC4BB2815698A00EAAFCC /* TextElement.swift in Sources */,
 				ED9DC4B528155FB000EAAFCC /* ContentMode.swift in Sources */,
 				ED8B45752819DDAB00704D6B /* AppCoordinator.swift in Sources */,
+				ED19F1C7281AC82100BEEE04 /* AuthViewModel.swift in Sources */,
 				ED9DC4AC28155CDB00EAAFCC /* ContentAlignment.swift in Sources */,
 				ED9DC4B72815677D00EAAFCC /* LayoutViewInfo.swift in Sources */,
 				ED9DC4A6281545EC00EAAFCC /* RGBA.swift in Sources */,
@@ -530,6 +574,14 @@
 /* End XCConfigurationList section */
 
 /* Begin XCRemoteSwiftPackageReference section */
+		ED19F1CA281ADBA900BEEE04 /* XCRemoteSwiftPackageReference "SnapKit" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/SnapKit/SnapKit";
+			requirement = {
+				kind = upToNextMinorVersion;
+				minimumVersion = 5.6.0;
+			};
+		};
 		ED790BDF280C7E730014B9D4 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */ = {
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/firebase/firebase-ios-sdk";
@@ -541,6 +593,11 @@
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
+		ED19F1CB281ADBA900BEEE04 /* SnapKit */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = ED19F1CA281ADBA900BEEE04 /* XCRemoteSwiftPackageReference "SnapKit" */;
+			productName = SnapKit;
+		};
 		ED790BE0280C7E730014B9D4 /* FirebaseAnalytics */ = {
 			isa = XCSwiftPackageProductDependency;
 			package = ED790BDF280C7E730014B9D4 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
