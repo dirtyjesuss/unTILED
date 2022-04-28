@@ -9,16 +9,17 @@ import Combine
 import Foundation.NSUUID
 import UIKit.UINavigationController
 
-class BaseCoordinator<CoordinationResult> {
+class BaseCoordinator<CoordinationResult>: Coordinator {
     
     // MARK: - Instance properties
 
     var id = UUID()
 
-    private var bag = Set<AnyCancellable>()
+    let navigationController: UINavigationController
+
+    var cancellables = Set<AnyCancellable>()
+
     private var childCoordinators: [UUID: Any] = [:]
-    
-    private let navigationController: UINavigationController
     
     // MARK: - Init
     
