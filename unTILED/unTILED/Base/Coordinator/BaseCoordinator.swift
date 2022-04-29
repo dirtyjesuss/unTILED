@@ -30,7 +30,7 @@ class BaseCoordinator<CoordinationResult>: Coordinator {
     // MARK: - Start
     
     func start() -> AnyPublisher<CoordinationResult, Never> {
-        fatalError("Method start() of BaseCoordinator must be overrider ")
+        fatalError("Method start() of BaseCoordinator must be overriden")
     }
     
     // MARK: - Coordination
